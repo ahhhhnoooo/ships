@@ -1,20 +1,31 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>HTML5</title>
-		<script src="js/main.js"></script>
-		<link rel="stylesheet" href="css/style.css" />
-	</head>
-	<body onload="init()">
-		<canvas
-		id="gameCanvas"
-		width="800"
-		height="640"
-		></canvas>
-		<span id="frontAngleLabel">0</span>
-		<span id="frontElevationLabel">0</span>
-		<span id="rearAngleLabel">0</span>
-		<span id="rearElevationLabel">0</span>
-		<span id="speed">0</span>
-	</body>
+
+<head>
+	<title>Ships</title>
+	<script src="js/main.js"></script>
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body onload="init()">
+	<canvas id="gameCanvas" width="800" height="640"></canvas>
+	<table class="info-container">
+		<tr>
+			<td>Front Angle </td><td id="frontAngleLabel">0</td>
+		</tr>
+		<tr>
+			<td>Front Elevation </td><td id="frontElevationLabel">0</td>
+		</tr>
+		<tr>
+			<td>Rear Angle </td><td id="rearAngleLabel">0</td>
+		</tr>
+		<tr>
+			<td>Rear Elevation </td><td id="rearElevationLabel">0</td>
+		</tr>
+		<tr>
+			<td>Speed </td><td id="speed">0</td>
+		</tr>
+	</table>
+</body>
+
 </html>
